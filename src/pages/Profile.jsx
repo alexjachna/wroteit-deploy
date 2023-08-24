@@ -47,7 +47,7 @@ export default function Profile({
               <p className="text-black font-light text-xl">{bio}</p>
               <div
                 className="absolute flex items-center justify-center rounded-full bg-zinc-100 bottom-3 right-3 w-8 h-8"
-                onClick={() => navigate("/EditProfile")}
+                onClick={() => navigate("/wroteit-deploy/EditProfile")}
               >
                 <img src={editImg} alt="" className="w-4 invert-[70%]" />
               </div>
@@ -76,7 +76,7 @@ export default function Profile({
                     Create your first post by visiting the{" "}
                     <span
                       className="text-blue-500 underline hover:cursor-pointer"
-                      onClick={() => navigate("/Home")}
+                      onClick={() => navigate("/wroteit-deploy/Home")}
                     >
                       home page
                     </span>

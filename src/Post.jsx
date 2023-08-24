@@ -42,7 +42,7 @@ export default function Post({
           <div id="credentials" className="flex gap-1 items-center">
             <p
               className="inline-block border-b border-b-gray-900 font-semibold hover:cursor-pointer"
-              onClick={() => navigate(`/${community}`)}
+              onClick={() => navigate(`/wroteit-deploy/${community}`)}
             >
               w/{community}
             </p>
@@ -52,7 +52,7 @@ export default function Post({
           <p
             id="title"
             className="text-lg font-bold hover:cursor-pointer"
-            onClick={() => navigate(`/post/${id}`)}
+            onClick={() => navigate(`/wroteit-deploy/post/${id}`)}
           >
             {title}
           </p>
@@ -62,7 +62,7 @@ export default function Post({
       <div
         id="comments"
         className="h-[20%] bg-slate-50 flex items-center gap-3 px-6 hover:cursor-pointer"
-        onClick={() => navigate(`/post/${id}`)}
+        onClick={() => navigate(`/wroteit-deploy/post/${id}`)}
       >
         <img src={commentImg} alt="" className="h-6" />
         <p>

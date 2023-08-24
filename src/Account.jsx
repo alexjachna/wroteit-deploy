@@ -28,7 +28,7 @@ export default function Account({ username, bio }) {
             </div>
           </div>
           <div
-            onClick={() => navigate("/Profile")}
+            onClick={() => navigate("/wroteit-deploy/Profile")}
             className="w-11/12 border-green-600 border rounded text-center hover:bg-green-50 hover:cursor-pointer"
           >
             <p className="text-green-600 font-semibold text-sm">View Profile</p>
@@ -36,7 +36,7 @@ export default function Account({ username, bio }) {
           <div>
             <p
               className="text-gray-500 text-sm py-2 hover:cursor-pointer hover:text-gray-700"
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/wroteit-deploy/Login")}
             >
               Sign out
             </p>

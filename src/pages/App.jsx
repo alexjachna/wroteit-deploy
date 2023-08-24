@@ -213,7 +213,7 @@ function App() {
       <Router>
         <Routes>
           <Route
-            path="/wroteit-deploy/"
+            path="/wroteit-deploy/Login"
             element={<Login setUsername={setUsername} />}
           />
           <Route

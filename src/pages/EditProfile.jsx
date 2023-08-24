@@ -58,7 +58,7 @@ export default function EditProfile({
             if (bioVal.current.value !== "") {
               setBio(bioVal.current.value);
             }
-            navigate("/Home");
+            navigate("/wroteit-deploy/Home");
           }}
         >
           Save

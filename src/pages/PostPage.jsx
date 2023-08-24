@@ -69,7 +69,9 @@ export default function PostPage({
                     <p
                       key={c.id}
                       className="hover:cursor-pointer"
-                      onClick={() => navigate(`/${c.communityName}`)}
+                      onClick={() =>
+                        navigate(`/wroteit-deploy/${c.communityName}`)
+                      }
                     >
                       w/{c.communityName}
                     </p>

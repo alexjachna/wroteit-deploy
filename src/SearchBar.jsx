@@ -24,7 +24,7 @@ export default function SearchBar({ posts, communities }) {
         type="text"
         placeholder="Search..."
         value={searched}
-        className="w-full h-12 rounded-lg text-black border-slate-200 border px-12  focus:outline-0"
+        className="w-full h-12 rounded-lg text-black border-slate-200 border px-12 focus:outline-0"
         onChange={(e) => setSearched(e.target.value)}
         onFocus={() => setShowSearch(true)}
         onBlur={() => setShowSearch(false)}
@@ -38,7 +38,7 @@ export default function SearchBar({ posts, communities }) {
                 <p
                   key={post.id}
                   className="hover:bg-slate-50 hover:cursor-pointer px-1 py-1"
-                  onClick={() => navigate(`/post/${post.id}`)}
+                  onClick={() => navigate(`/wroteit-deploy/post/${post.id}`)}
                 >
                   {post.title}
                 </p>
@@ -54,8 +54,10 @@ export default function SearchBar({ posts, communities }) {
               return (
                 <p
                   key={comm.id}
-                  className="hover:bg-slate-50 px-1 py-1"
-                  onClick={() => navigate(`/${comm.communityName}`)}
+                  className="hover:bg-slate-50 hover:cursor-pointer px-1 py-1"
+                  onClick={() => {
+                    navigate(`/wroteit-deploy/${comm.communityName}`);
+                  }}
                 >
                   w/{comm.communityName}
                 </p>

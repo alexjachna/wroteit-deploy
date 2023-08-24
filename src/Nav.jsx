@@ -34,7 +34,7 @@ export default function Nav({ username, bio, posts, communities }) {
     <div className="flex justify-evenly items-center w-full bg-zinc-100 border-b-slate-500 border-b-[1px] border-opacity-25">
       <div
         className="flex items-center h-20 hover:cursor-pointer"
-        onClick={() => navigate("/Home")}
+        onClick={() => navigate("/wroteit-deploy/Home")}
       >
         <img src={wroteitLogo} alt="wroteit logo" className="w-12" />
         <p className="text-zinc-700 text-lg font-medium">Wroteit</p>
@@ -77,7 +77,7 @@ export default function Nav({ username, bio, posts, communities }) {
                 </div>
                 <p
                   className="text-sm text-zinc-500"
-                  onClick={() => navigate("/wroteit-deploy")}
+                  onClick={() => navigate("/wroteit-deploy/Login")}
                 >
                   Sign out
                 </p>
