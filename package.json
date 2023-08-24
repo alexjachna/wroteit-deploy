@@ -1,6 +1,6 @@
 {
-  "homepage": "http://alexjachna.github.io/wroteit-deploy/Login",
-  "name": "wroteit",
+  "homepage": "http://alexjachna.github.io/wroteit-deploy/",
+  "name": "wroteit-deploy",
   "private": true,
   "version": "0.0.0",
   "type": "module",
