@@ -212,9 +212,12 @@ function App() {
     <div className="w-full h-screen flex flex-col">
       <Router>
         <Routes>
-          <Route path="/" element={<Login setUsername={setUsername} />} />
           <Route
-            path="/Home"
+            path="/wroteit-deploy/"
+            element={<Login setUsername={setUsername} />}
+          />
+          <Route
+            path="/wroteit-deploy/Home"
             element={
               <Home
                 username={username}
@@ -227,7 +230,7 @@ function App() {
             }
           />
           <Route
-            path="/Profile"
+            path="/wroteit-deploy/Profile"
             element={
               <Profile
                 username={username}
@@ -239,7 +242,7 @@ function App() {
             }
           />
           <Route
-            path="/EditProfile"
+            path="/wroteit-deploy/EditProfile"
             element={
               <EditProfile
                 username={username}
@@ -252,7 +255,7 @@ function App() {
             }
           />
           <Route
-            path="/:community"
+            path="/wroteit-deploy/:community"
             element={
               <Community
                 username={username}
@@ -265,7 +268,7 @@ function App() {
             }
           />
           <Route
-            path="/post/:id"
+            path="/wroteit-deploy/post/:id"
             element={
               <PostPage
                 username={username}

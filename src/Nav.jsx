@@ -69,7 +69,7 @@ export default function Nav({ username, bio, posts, communities }) {
                   className="flex gap-4"
                   onClick={() => {
                     setShowNav(!showNav);
-                    navigate("/Profile");
+                    navigate("/wroteit-deploy/Profile");
                   }}
                 >
                   <img src={profileImage} alt="" className="h-6" />
@@ -77,7 +77,7 @@ export default function Nav({ username, bio, posts, communities }) {
                 </div>
                 <p
                   className="text-sm text-zinc-500"
-                  onClick={() => navigate("/")}
+                  onClick={() => navigate("/wroteit-deploy")}
                 >
                   Sign out
                 </p>
@@ -91,7 +91,7 @@ export default function Nav({ username, bio, posts, communities }) {
                         key={c.id}
                         onClick={() => {
                           toggleNav(showNav);
-                          navigate(`/${c.communityName}`);
+                          navigate(`/wroteit-deploy/${c.communityName}`);
                         }}
                       >
                         w/{c.communityName}
@@ -107,7 +107,7 @@ export default function Nav({ username, bio, posts, communities }) {
                       className="flex justify-between"
                       onClick={() => {
                         toggleNav(showNav);
-                        navigate(`/post/${post.id}`);
+                        navigate(`/wroteit-deploy/post/${post.id}`);
                       }}
                     >
                       <p className="hover:bg-slate-50 px-1">{post.title}</p>
