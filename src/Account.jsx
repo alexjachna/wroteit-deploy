@@ -36,7 +36,7 @@ export default function Account({ username, bio }) {
           <div>
             <p
               className="text-gray-500 text-sm py-2 hover:cursor-pointer hover:text-gray-700"
-              onClick={() => navigate("/wroteit-deploy/Login")}
+              onClick={() => navigate("/wroteit-deploy/")}
             >
               Sign out
             </p>

@@ -77,7 +77,7 @@ export default function Nav({ username, bio, posts, communities }) {
                 </div>
                 <p
                   className="text-sm text-zinc-500"
-                  onClick={() => navigate("/wroteit-deploy/Login")}
+                  onClick={() => navigate("/wroteit-deploy/")}
                 >
                   Sign out
                 </p>
